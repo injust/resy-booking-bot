@@ -2,6 +2,8 @@ name := "resy-booking-bot"
 
 scalaVersion := "2.13.8"
 
+updateOptions := updateOptions.value.withCachedResolution(true)
+
 ThisBuild / scalafixDependencies ++= Seq(
   "com.github.vovapolu" %% "scaluzzi"         % "0.1.23",
   "org.scalatest"       %% "autofix"          % "3.1.0.1",
